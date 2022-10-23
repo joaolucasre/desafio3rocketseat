@@ -1,0 +1,191 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: 'Poppins', sans-serif;
+  background: #E5E5E5;
+}
+
+body::before {
+  content: '';
+  width: 100%;
+  height: 368px;
+  background: #535971;
+  position: absolute;
+  z-index: -1;
+  
+  top: 0;
+  left: 0;
+}
+
+.page {
+  width: 736px;
+  margin: 0 auto;
+}
+
+header {
+  width: 319px;
+  margin-top: 74px;
+}
+
+header h1, fieldset legend, .legend, button {
+  font-family: 'Staatliches', cursive;
+}
+
+header {
+  color: #ffffff;
+}
+
+header h1 {
+  font-size: 48px;
+  line-height: 60px;
+  font-weight: 400;
+  
+  margin-bottom: 18px;
+}
+
+header p {
+  font-size: 18px;
+  line-height: 30px;
+}
+
+form {
+  margin-top: 38px;
+  background: #ffffff;
+  border-radius: 20px 20px 0 0;
+
+  min-height: 300px;
+  padding: 64px;
+
+  display: flex;
+  flex-direction: column;
+  gap: 48px;
+}
+
+fieldset {
+  border: none;
+}
+
+.fieldset-wrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+
+fieldset legend {
+  font-size: 24px;
+  line-height: 34px;
+
+  color: #535971;
+
+  width: 100%;
+
+  border-bottom: 1px solid #E6E6F0;
+  padding-bottom: 16px;
+}
+
+.cols-3 legend {
+  color: black;
+}
+
+.input-wrapper {
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+
+  width: 100%;
+}
+
+.input-wrapper label {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 24px;
+
+  color: #4E4958;
+
+  margin-bottom: 8px;
+}
+
+.input-wrapper label span {
+  font-size: 12px;
+  line-height: 20px;
+
+  color: #C1BCCC;
+}
+
+.input-wrapper label span:hover {
+  color: #706e74;
+}
+
+.input-wrapper input {
+  width: 100%;
+  padding-left: 100px;
+
+  background: #fafafc;
+
+  border: 1px solid #E6E6F0;
+  border-radius: 8px;
+
+  height: 56px;
+
+  padding: 0 24px;
+
+  font-size: 16px;
+  line-height: 26px;
+  color: #706e74;
+}
+
+.cols-2 {
+  display: flex;
+  gap: 22px;
+}
+
+#first-mentoring, #second-mentoring {
+  display: flex;
+  width: 100%;
+}
+
+.legend {
+  font-size: 20px;
+  line-height: 34px;
+
+  color: #535971;
+
+  width: 100%;
+
+  padding-bottom: 8px;
+}
+
+footer {
+  background: #535971;
+
+  height: 160px;
+  display: flex;
+  flex-direction: column;
+  
+  border-radius: 0 0 20px 20px;
+
+  padding: 52px 71px;
+}
+
+footer .button {
+  height: 56px;
+  background: #FF5374;
+  border: 0;
+  border-radius: 20px;
+
+  font-size: 20px;
+  line-height: 26px;
+  color: white;
+}
+
+footer .button:hover {
+  background: #ff537591;
+}
+
+input:invalid {
+  border: 1px solid #FF1010;
+}
